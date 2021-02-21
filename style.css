@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+button {
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    color: #222;
+}
+
+a {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 10vh;
+}
+
+header .empty-space {
+    width: 80%;
+}
+
+header .header-navigation {
+    width: auto;
+    padding: 15px;
+}
+
+header .header-navigation .navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+header .header-navigation .navigation ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header .header-navigation .navigation ul li {
+    list-style: none;
+}
+
+header .header-navigation .navigation ul li,
+header .header-navigation .navigation img,
+header .header-navigation .navigation button {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+header .header-navigation .navigation ul li a {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+header .header-navigation .navigation img {
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    border-radius: 50%;
+    border: none;
+}
+
+header .header-navigation .navigation img:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    opacity: 1;
+}
+
+header .header-navigation .navigation .login-user {
+    color: #fff;
+    cursor: pointer;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-right: 8px;
+    min-width: 96px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    align-items: center;
+    padding-top: 50px;
+}
+
+main .google-image {
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+}
+
+main .search-form {
+    padding: 20px;
+    max-height: 160px;
+}
